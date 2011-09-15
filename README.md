@@ -19,11 +19,13 @@ The most important files are:
 
 Requirements
 ------------
-Both the SSA and tau-leaping programmes use MPI to coordinate the
-parallel calculation of trajectories. (Multithreading is adequate for
-a single machine, but MPI allows one to easily use a cluster as well.)
-So, you'll need some MPI implementation installed, even if you don't
-plan to use the parallel feature.
+Both the SSA and tau-leaping programmes use MPI to coordinate the parallel
+calculation of trajectories. (Multithreading is adequate for a single machine,
+but MPI allows one to easily use a cluster as well.) You'll thus need some MPI
+implementation installed (eg. openMPI or mpich), even if you don't plan to use
+the parallel feature.
+
+The deterministic integrator needs Python 2.x with Numpy installed.
 
 Directions
 ----------
